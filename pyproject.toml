@@ -1,0 +1,29 @@
+[project]
+name = "mba-ia-desafio-ingestao-busca"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Flavio Sousa",email = "flaviomarcioti@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "langchain>=0.3.0",
+    "langchain-community>=0.3.0",
+    "langchain-postgres>=0.0.15",
+    "langchain-text-splitters>=0.3.0",
+    "langchain-openai>=0.3.0",
+    "langchain-google-genai>=2.1.0",
+    "pypdf>=6.0.0",
+    "python-dotenv>=1.1.0",
+    "pgvector>=0.3.6",
+    "psycopg[binary,pool]>=3.2.0",
+    "numpy (<2.2)",
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
